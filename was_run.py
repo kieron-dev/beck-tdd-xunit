@@ -9,3 +9,6 @@ class WasRun(TestCase):
 
     def testMethod(self):
         self.log += "testMethod "
+
+    def testFailingMethod(self):
+        raise Exception
