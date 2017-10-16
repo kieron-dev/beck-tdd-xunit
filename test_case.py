@@ -17,7 +17,8 @@ class TestCase:
         try:
             method = getattr(self, self.name)
             method()
-        except:
+        except Exception as e:
+            print e
             result.testFailed()
         self.tearDown()
         return result
